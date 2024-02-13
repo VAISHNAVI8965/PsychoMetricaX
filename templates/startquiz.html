@@ -12,6 +12,7 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style2.css') }}"/>
   <style>
     #startquiz{
       padding: 10px 20px ; background-color: rgb(11, 183, 11);
@@ -32,7 +33,7 @@
       <a href="index2.html" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini">
-          <b>UL</b>E</span>
+          <b>PM</b>X</span>
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg">
           <b>PsychoMetricaX</span>
@@ -96,7 +97,7 @@
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header">MAIN NAVIGATION</li>
           <li >
-            <a href="/studenthome.html">
+            <a href="/Home">
               <i class="fa fa-home"></i> <span>Home</span>
             </a>
           </li>
@@ -116,11 +117,11 @@
             </a>
           </li>
 
-          <li>
-            <a href="/reportgeneration">
+          <!-- <li>
+            <a href="/Home">
               <i class="fa fa-users"></i> <span>Report</span>
             </a>
-          </li>
+          </li> -->
           <li>
             <a href="/settings.html">
               <i class="fa fa-cog"></i> <span>Settings</span>
@@ -178,7 +179,7 @@
                             {% endwith %}
                             <div class="text-center">
                                 <p style="    text-align: justify;"></p>
-                                <button id="startquiz"><a href="/quiz.html" class="start" style="color: white;">Start Quiz</a></button>
+                                <a href="/quiz.html" style="color: #fff;"><button id="startquiz " class="butn butn-bg "> <span>Start Quiz</span></button></a>
                             </div>
                             {% block body %}{% endblock %}
                         </div>
